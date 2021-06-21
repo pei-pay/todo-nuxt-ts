@@ -47,7 +47,7 @@ const useTodo = () => {
   const updateTodo = (todo: Todo, newTitle: string) => {
     todo.title = newTitle;
   };
-  const checkAllTodo = e => {
+  const checkAllTodo = (e: any) => {
     state.todos.forEach(todo => {
       todo.completed = e.target.checked;
     });
